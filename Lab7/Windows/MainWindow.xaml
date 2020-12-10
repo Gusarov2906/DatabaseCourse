@@ -1,0 +1,29 @@
+﻿<Window x:Class="Lab7.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab7.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <DataGrid x:Name="DataTable" HorizontalAlignment="Left" Height="499" Margin="161,45,0,0" VerticalAlignment="Top" Width="804" IsReadOnly="True"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="AddButtonClick"/>
+        <Button x:Name="RemoveButton" Content="Удалить" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="RemoveButtonClick"/>
+        <Button x:Name="UpdateButton" Content="Обновить" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="UpdateButtonClick"/>
+        <ComboBox x:Name="TypeOfTableCombobox" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="143" Height="22" SelectionChanged="Reload">
+            <Label Content="Person"/>
+            <Label Content="Student"/>
+            <Label Content="Relative of student"/>
+            <Label Content="Type of relative"/>
+            <Label Content="Benefit"/>
+            <Label Content="Group"/>
+            <Label Content="Faculty"/>
+        </ComboBox>
+        <Label x:Name="TableTitleLabel" Content="" HorizontalAlignment="Left" Margin="362,13,0,0" VerticalAlignment="Top" Width="400" ScrollViewer.HorizontalScrollBarVisibility="Auto" HorizontalContentAlignment="Center" FontSize="16"/>
+        <Button x:Name="MSysObjectsButton" Content="MSysObjectsTable" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="MSysObjectsButtonClick"/>
+        <Button x:Name="ReloadTableButton" Content="Перезагрузить" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="ReloadButtonClick"/>
+        <Button x:Name="RequsetsButton" Content="Запросы" HorizontalAlignment="Left" Margin="10,283,0,0" VerticalAlignment="Top" Width="143" Height="25" Click="RequestsButtonClick"/>
+
+    </Grid>
+</Window>

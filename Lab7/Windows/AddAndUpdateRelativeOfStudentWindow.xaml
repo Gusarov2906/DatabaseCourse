@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab7.Windows.AddAndUpdateRelativeOfStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab7.Windows"
+        mc:Ignorable="d"
+        Closing="WindowClosing"
+        Title="AddRelativeOfStudentWindow" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="TitleLabel" Content="Добавление родственника студента" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Light" FontSize="18" UseLayoutRounding="False"/>
+
+        <TextBox x:Name="PersonIDTextbox" HorizontalAlignment="Left" Height="23" Margin="50,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center"/>
+        <Label x:Name="PersonIDLabel" Content="ID персоны" HorizontalAlignment="Left" Margin="50,35,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Light"/>
+        <TextBox x:Name="NumberStudentCardTextbox" HorizontalAlignment="Left" Height="23" Margin="50,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center"/>
+        <Label x:Name="NumberStudentCardLabel" Content="Номер студенческого билета" HorizontalAlignment="Left" Margin="50,84,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Light"/>
+        <TextBox x:Name="IDTypeRelativeTextbox" HorizontalAlignment="Left" Height="23" Margin="50,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center"/>
+        <Label x:Name="IDTypeRelativeLabel" Content="ID вида родственной связи" HorizontalAlignment="Left" Margin="50,138,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Light"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="0,192,-0.4,0" VerticalAlignment="Top" Width="294" HorizontalContentAlignment="Center" FontFamily="Yu Gothic UI Light" FontSize="10" Foreground="#FFD02424" Visibility="Hidden"/>
+
+        <Button x:Name="Button" Content="Add" HorizontalAlignment="Left" Margin="50,215,0,0" VerticalAlignment="Top" Width="200" Height="30" Click="ButtonClick"/>
+
+    </Grid>
+</Window>
